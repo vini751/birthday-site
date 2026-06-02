@@ -1,4 +1,4 @@
-/* 🌌 BACKGROUND */
+/* 🌌 GLOBAL */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,56 +6,79 @@ body {
   color: white;
 }
 
-/* 📦 WRAPPER */
-.timeline-container {
+/* 🔐 LOGIN SCREEN (CENTER FIX) */
+.login-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+input {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  width: 220px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 18px;
+  margin-top: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* 🎉 HERO (CENTER FIX) */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 40px 20px;
 }
 
 /* 🧠 TITLE */
-h1 {
-  font-size: 34px;
-  margin-bottom: 40px;
+.hero h1 {
+  font-size: 42px;
+  margin: 10px 0;
 }
 
-/* 📁 ALBUM */
-.album {
-  margin: 30px auto;
-  max-width: 1000px;
+/* 📸 IMAGE */
+.photo-frame {
+  margin-top: 25px;
 }
 
-/* 👶 SECTION TITLE */
-.album h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-
-/* 📸 IMAGE GRID */
-.gallery {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-/* 🖼️ IMAGE STYLE */
-.gallery img {
-  width: 220px;
-  height: 220px;
+.photo-frame img {
+  width: 320px;
+  height: 320px;
   object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-  transition: transform 0.3s ease;
+  border-radius: 50%;
+  border: 8px solid rgba(255,255,255,0.9);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
 
-/* ✨ HOVER */
-.gallery img:hover {
-  transform: scale(1.05);
+/* 🔗 LINK */
+.timeline-link {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 22px;
+  background: white;
+  color: #1b263b;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
 }
 
-/* 💬 CAPTION */
-.caption {
-  margin-top: 15px;
-  opacity: 0.85;
-  font-size: 14px;
+/* ❌ ERROR TEXT */
+#error {
+  color: #ff6b6b;
+  margin-top: 10px;
 }
