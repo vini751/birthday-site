@@ -1,4 +1,5 @@
-/* 🌌 GLOBAL */
+
+/* 🌌 BACKGROUND */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,7 +7,7 @@ body {
   color: white;
 }
 
-/* 🔐 LOGIN SCREEN (CENTER FIX) */
+/* 🔐 LOGIN SCREEN */
 .login-screen {
   height: 100vh;
   display: flex;
@@ -34,7 +35,13 @@ button {
   font-weight: bold;
 }
 
-/* 🎉 HERO (CENTER FIX) */
+/* ❌ ERROR TEXT */
+#error {
+  color: #ff6b6b;
+  margin-top: 10px;
+}
+
+/* 🎉 HERO SECTION */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -51,7 +58,7 @@ button {
   margin: 10px 0;
 }
 
-/* 📸 IMAGE */
+/* 📸 MAIN PHOTO (CIRCLE) */
 .photo-frame {
   margin-top: 25px;
 }
@@ -65,7 +72,7 @@ button {
   box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
 
-/* 🔗 LINK */
+/* 🔗 TIMELINE LINK */
 .timeline-link {
   display: inline-block;
   margin-top: 30px;
@@ -77,8 +84,48 @@ button {
   font-weight: bold;
 }
 
-/* ❌ ERROR TEXT */
-#error {
-  color: #ff6b6b;
-  margin-top: 10px;
+/* 🧭 TIMELINE PAGE WRAPPER */
+.timeline-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* 🧠 TIMELINE TITLE */
+.timeline-container h1 {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+/* 📁 ALBUM */
+.album {
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+.album h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* 📸 GALLERY GRID */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* 🖼️ ALL IMAGES SAME SIZE */
+.gallery img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+/* ✨ HOVER EFFECT */
+.gallery img:hover {
+  transform: scale(1.05);
 }
