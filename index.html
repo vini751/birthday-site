@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- test -->
 <head>
   <meta charset="UTF-8">
-  <title>Happy Birthday Abhi 🎉</title>
+  <title>Birthday Surprise 🎉</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- HERO SECTION -->
+<!-- 🔐 LOGIN SCREEN -->
+<div id="login-screen" class="login-screen">
+  <h2>🎂 Enter Password</h2>
+  <p>Hint: It’s something special 😉</p>
+
+  <input type="password" id="password" placeholder="Enter password">
+
+  <button onclick="checkPassword()">Unlock</button>
+
+  <p id="error"></p>
+</div>
+
+<!-- 🎉 MAIN WEBSITE (HIDDEN FIRST) -->
+<div id="main-site" style="display:none;">
+
   <div class="hero">
     <h1>Happy Birthday Abhi 🎉</h1>
-    <p>30 years of adventures, bad jokes, brilliance, chaos, and memories.</p>
+    <p>30 years of adventures, chaos, brilliance & memories</p>
 
-    <!-- MAIN PHOTO -->
     <div class="photo-frame">
       <img src="images/abhi-main.jpg" alt="Abhi Photo">
     </div>
 
-    <!-- LINK TO TIMELINE -->
     <a class="timeline-link" href="timeline.html">
       Abhi’s moments through 30 years →
     </a>
   </div>
+
+</div>
+
+<!-- 🔑 SCRIPT -->
+<script>
+function checkPassword() {
+  const pass = document.getElementById("password").value;
+
+  if (pass === "Naruto") {
+    document.getElementById("login-screen").style.display = "none";
+    document.getElementById("main-site").style.display = "block";
+  } else {
+    document.getElementById("error").innerText = "Wrong password 😅 Try again";
+  }
+}
+</script>
 
 </body>
 </html>
