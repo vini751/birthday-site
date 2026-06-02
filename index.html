@@ -8,6 +8,14 @@
 
 <body>
 
+<!-- 🎈 BACKGROUND ANIMATION ELEMENTS -->
+<div class="balloons">
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+</div>
+
 <!-- 🔐 LOGIN SCREEN -->
 <div id="login-screen" class="login-screen">
   <h2>🎂 Enter Password</h2>
@@ -24,15 +32,19 @@
 <div id="main-site" style="display:none;">
 
   <div class="hero">
-    <h1>Happy Birthday Abhi 🎉</h1>
-    <p>30 years of adventures, chaos, brilliance & memories</p>
+
+    <h1 class="title">🎉 Happy Birthday Abhi 🎉</h1>
+
+    <p class="subtitle">
+      30 years of adventures, chaos, brilliance & memories
+    </p>
 
     <!-- 📸 PHOTO -->
     <div class="photo-frame">
       <img src="abhi.JPG" alt="Abhi Photo" class="main-photo">
     </div>
 
-    <!-- 🔗 TIMELINE LINK -->
+    <!-- 🔗 LINK -->
     <a class="timeline-link" href="timeline.html">
       Abhi’s moments through 30 years →
     </a>
@@ -41,7 +53,7 @@
 
 </div>
 
-<!-- 🔑 PASSWORD SCRIPT -->
+<!-- 🔑 SCRIPT -->
 <script>
 function checkPassword() {
   const pass = document.getElementById("password").value;
