@@ -5,7 +5,6 @@ body {
   background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
   color: white;
   text-align: center;
-  min-height: 100vh;
 }
 
 /* 🔐 LOGIN */
@@ -15,16 +14,16 @@ body {
 
 input {
   padding: 12px;
-  border-radius: 10px;
+  border-radius: 8px;
   border: none;
   width: 220px;
   text-align: center;
 }
 
 button {
-  padding: 10px 18px;
-  margin-top: 12px;
-  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 8px;
   border: none;
   cursor: pointer;
   font-weight: bold;
@@ -35,38 +34,25 @@ button {
   padding: 80px 20px;
 }
 
-/* 📸 PHOTO */
-.photo-wrap img {
-  width: 380px;
-  height: 380px;
-  max-width: 80vw;
+/* 📸 CIRCULAR PHOTO (OLD STYLE YOU LIKED) */
+.photo-frame img {
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 50%;
-  border: 8px solid rgba(255,255,255,0.9);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-  transition: 0.3s;
+  border: 5px solid white;
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
-.photo-wrap img:hover {
-  transform: scale(1.05);
-}
-
-/* 🔗 BUTTON */
-.btn {
+/* 🔗 LINK */
+.timeline-link {
   display: inline-block;
-  margin-top: 35px;
-  padding: 14px 24px;
+  margin-top: 30px;
+  padding: 12px 20px;
   background: white;
   color: #1b263b;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 25px;
   font-weight: bold;
-}
-
-/* 📱 MOBILE */
-@media (max-width: 600px) {
-  .photo-wrap img {
-    width: 260px;
-    height: 260px;
-  }
 }
