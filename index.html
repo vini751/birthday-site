@@ -14,6 +14,7 @@
   <p>Hint: It’s something special 😉</p>
 
   <input type="password" id="password" placeholder="Enter password">
+
   <button onclick="checkPassword()">Unlock</button>
 
   <p id="error"></p>
@@ -26,18 +27,21 @@
     <h1>Happy Birthday Abhi 🎉</h1>
     <p>30 years of adventures, chaos, brilliance & memories</p>
 
-    <!-- 📸 CIRCULAR PHOTO -->
+    <!-- 📸 PHOTO -->
     <div class="photo-frame">
-      <img src="abhi.JPG" alt="Abhi Photo">
+      <img src="images/abhi1.png" alt="Abhi Photo" class="main-photo">
     </div>
 
+    <!-- 🔗 TIMELINE LINK -->
     <a class="timeline-link" href="timeline.html">
       Abhi’s moments through 30 years →
     </a>
+
   </div>
 
 </div>
 
+<!-- 🔑 PASSWORD SCRIPT -->
 <script>
 function checkPassword() {
   const pass = document.getElementById("password").value;
