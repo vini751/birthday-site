@@ -1,3 +1,4 @@
+/* 🌌 Background */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,26 +7,51 @@ body {
   text-align: center;
 }
 
-/* HERO */
+/* 🔐 LOGIN SCREEN */
+.login-screen {
+  margin-top: 150px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#error {
+  color: #ff6b6b;
+  margin-top: 10px;
+}
+
+/* 🎉 HERO SECTION */
 .hero {
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 
-/* MAIN PHOTO */
-.photo-frame {
-  margin: 30px auto;
-}
-
+/* 📸 PHOTO */
 .photo-frame img {
   width: 250px;
   height: 250px;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid white;
+  margin-top: 20px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
-/* LINK */
+/* 🔗 LINK BUTTON */
 .timeline-link {
   display: inline-block;
   margin-top: 30px;
