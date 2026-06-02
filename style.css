@@ -1,22 +1,16 @@
-/* 🌌 GLOBAL BACKGROUND */
+/* 🌌 Background */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
   color: white;
   text-align: center;
   min-height: 100vh;
 }
 
-/* 🔐 LOGIN SCREEN */
+/* 🔐 LOGIN */
 .login-screen {
   margin-top: 150px;
-  padding: 20px;
-}
-
-.login-screen h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
 }
 
 input {
@@ -25,9 +19,6 @@ input {
   border: none;
   width: 220px;
   text-align: center;
-  font-size: 14px;
-  outline: none;
-  margin-top: 10px;
 }
 
 button {
@@ -37,60 +28,31 @@ button {
   border: none;
   cursor: pointer;
   font-weight: bold;
-  background: #ffffff;
-  color: #1b263b;
-  transition: 0.3s ease;
 }
 
-button:hover {
-  transform: scale(1.05);
-}
-
-#error {
-  color: #ff6b6b;
-  margin-top: 10px;
-}
-
-/* 🎉 HERO SECTION */
+/* 🎉 HERO */
 .hero {
   padding: 80px 20px;
 }
 
-/* ✨ TITLE */
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 18px;
-  opacity: 0.9;
-}
-
-/* 📸 PHOTO (BIG IMPACT LOOK) */
-.photo-frame {
-  margin-top: 25px;
-}
-
-.photo-frame img {
+/* 📸 PHOTO */
+.photo-wrap img {
   width: 380px;
   height: 380px;
   max-width: 80vw;
-  max-height: 80vw;
   object-fit: cover;
   border-radius: 50%;
   border: 8px solid rgba(255,255,255,0.9);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  transition: 0.3s;
 }
 
-.photo-frame img:hover {
+.photo-wrap img:hover {
   transform: scale(1.05);
-  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
 }
 
-/* 🔗 LINK BUTTON */
-.timeline-link {
+/* 🔗 BUTTON */
+.btn {
   display: inline-block;
   margin-top: 35px;
   padding: 14px 24px;
@@ -99,22 +61,11 @@ button:hover {
   text-decoration: none;
   border-radius: 30px;
   font-weight: bold;
-  font-size: 16px;
-  transition: 0.3s ease;
 }
 
-.timeline-link:hover {
-  transform: scale(1.08);
-  background: #f1f1f1;
-}
-
-/* 📱 MOBILE RESPONSIVE */
+/* 📱 MOBILE */
 @media (max-width: 600px) {
-  .hero h1 {
-    font-size: 32px;
-  }
-
-  .photo-frame img {
+  .photo-wrap img {
     width: 260px;
     height: 260px;
   }
