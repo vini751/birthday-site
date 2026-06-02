@@ -14,39 +14,34 @@
   <p>Hint: It’s something special 😉</p>
 
   <input type="password" id="password" placeholder="Enter password">
-
   <button onclick="checkPassword()">Unlock</button>
 
   <p id="error"></p>
 </div>
 
-<!-- 🎉 MAIN WEBSITE (HIDDEN FIRST) -->
+<!-- 🎉 MAIN SITE -->
 <div id="main-site" style="display:none;">
 
   <div class="hero">
     <h1>Happy Birthday Abhi 🎉</h1>
     <p>30 years of adventures, chaos, brilliance & memories</p>
 
-    <!-- 📸 PHOTO -->
+    <!-- 📸 CIRCULAR PHOTO -->
     <div class="photo-frame">
-      <img src="abhi.JPG" class="main-photo" alt="Abhi Photo">
+      <img src="abhi.JPG" alt="Abhi Photo">
     </div>
 
-    <!-- 🔗 TIMELINE LINK -->
     <a class="timeline-link" href="timeline.html">
       Abhi’s moments through 30 years →
     </a>
-
   </div>
 
 </div>
 
-<!-- 🔑 PASSWORD SCRIPT -->
 <script>
 function checkPassword() {
   const pass = document.getElementById("password").value;
 
-  // 🔐 PASSWORD (you can change this anytime)
   if (pass === "Naruto") {
     document.getElementById("login-screen").style.display = "none";
     document.getElementById("main-site").style.display = "block";
