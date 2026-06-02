@@ -1,58 +1,61 @@
-/* 🌌 Background */
+/* 🌌 BACKGROUND */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
   color: white;
+}
+
+/* 📦 WRAPPER */
+.timeline-container {
   text-align: center;
+  padding: 40px 20px;
 }
 
-/* 🔐 LOGIN */
-.login-screen {
-  margin-top: 150px;
+/* 🧠 TITLE */
+h1 {
+  font-size: 34px;
+  margin-bottom: 40px;
 }
 
-input {
-  padding: 12px;
-  border-radius: 8px;
-  border: none;
+/* 📁 ALBUM */
+.album {
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+/* 👶 SECTION TITLE */
+.album h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* 📸 IMAGE GRID */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* 🖼️ IMAGE STYLE */
+.gallery img {
   width: 220px;
-  text-align: center;
-}
-
-button {
-  padding: 10px 15px;
-  margin-top: 10px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-/* 🎉 HERO */
-.hero {
-  padding: 80px 20px;
-}
-
-/* 📸 CIRCULAR PHOTO (OLD STYLE YOU LIKED) */
-.photo-frame img {
-  width: 250px;
-  height: 250px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid white;
-  margin-top: 20px;
+  border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
 }
 
-/* 🔗 LINK */
-.timeline-link {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 20px;
-  background: white;
-  color: #1b263b;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
+/* ✨ HOVER */
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* 💬 CAPTION */
+.caption {
+  margin-top: 15px;
+  opacity: 0.85;
+  font-size: 14px;
 }
