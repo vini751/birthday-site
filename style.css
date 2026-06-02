@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
+  color: white;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  padding: 100px 20px;
+}
+
+/* MAIN PHOTO */
+.photo-frame {
+  margin: 30px auto;
+}
+
+.photo-frame img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* LINK */
+.timeline-link {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 20px;
+  background: white;
+  color: #1b263b;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.timeline-link:hover {
+  transform: scale(1.05);
+}
