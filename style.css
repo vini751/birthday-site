@@ -194,9 +194,6 @@ button {
   height: auto;
   max-height: 320px;
   object-fit: contain;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-  transition: transform 0.3s ease;
 }
 
 .gallery img:hover {
